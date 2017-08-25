@@ -1,3 +1,6 @@
+// These are small functions that aren't big enough to be a module.
+// Doesn't use 'export default'. To import, put in { }
+
 export function formatPrice(cents) {
   return `$${(cents / 100).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
 }
